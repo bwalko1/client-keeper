@@ -1,0 +1,7 @@
+{
+  "name": "clientKeeper",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
