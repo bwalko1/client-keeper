@@ -4,19 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { LoginPageRoutingModule } from './login-routing.module';
+import { ListPageRoutingModule } from './list-routing.module';
 
-import { LoginPage } from './login.page';
-import { MaterialModule } from '../material.module';
+import { ListPage } from './list.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    LoginPageRoutingModule,
-    MaterialModule
+    ListPageRoutingModule
   ],
-  declarations: [LoginPage]
+  declarations: [ListPage]
 })
-export class LoginPageModule {}
+export class ListPageModule {}

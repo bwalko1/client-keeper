@@ -13,6 +13,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import firebaseConfig from './firebase';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { UserService } from './user.service';
+import 'hammerjs';
 
 @NgModule({
   declarations: [AppComponent],
@@ -24,11 +26,11 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     BrowserAnimationsModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAuthModule
-  ]
-  ,
+  ],
   providers: [
     StatusBar,
     SplashScreen,
+    UserService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
