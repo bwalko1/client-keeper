@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { IonTabs } from '@ionic/angular';
 
 @Component({
@@ -6,12 +6,14 @@ import { IonTabs } from '@ionic/angular';
   templateUrl: './tabs.page.html',
   styleUrls: ['./tabs.page.scss']
 })
-export class TabsPage implements OnInit {
+export class TabsPage implements OnInit, AfterViewInit {
   @ViewChild('tabs', { static: false }) tabs: IonTabs;
 
   constructor() {}
 
-  ngOnInit() {
-    this.tabs.select('list');
+  ngOnInit() {}
+
+  ngAfterViewInit() {
+    this.tabs.select('setup');
   }
 }
