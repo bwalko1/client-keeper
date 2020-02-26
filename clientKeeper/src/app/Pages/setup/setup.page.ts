@@ -3,7 +3,7 @@ import { AngularFirestore } from '@angular/fire/firestore';
 import { UserService } from '../../Services/user.service';
 
 @Component({
-  selector: 'app-setup',
+  selector: 'ck-setup',
   templateUrl: './setup.page.html',
   styleUrls: ['./setup.page.scss']
 })

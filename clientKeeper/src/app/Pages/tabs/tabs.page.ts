@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { IonTabs } from '@ionic/angular';
 
 @Component({
-  selector: 'app-tabs',
+  selector: 'ck-tabs',
   templateUrl: './tabs.page.html',
   styleUrls: ['./tabs.page.scss']
 })

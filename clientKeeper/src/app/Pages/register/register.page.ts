@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 import { UserService } from '../../Services/user.service';
 
 @Component({
-  selector: 'app-register',
+  selector: 'ck-register',
   templateUrl: './register.page.html',
   styleUrls: ['./register.page.scss']
 })

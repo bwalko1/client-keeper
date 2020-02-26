@@ -9,6 +9,7 @@ import { ProfilePageRoutingModule } from './profile-routing.module';
 import { ProfilePage } from './profile.page';
 import { MaterialModule } from '../../Modules/material.module';
 import { ShareModule } from '../../Modules/share.module';
+import { LoadingComponent } from 'src/app/Components/loading/loading.component';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { ShareModule } from '../../Modules/share.module';
     IonicModule,
     ProfilePageRoutingModule,
     MaterialModule,
-    ShareModule
+    ShareModule,
+    LoadingComponent
   ],
   declarations: [ProfilePage]
 })

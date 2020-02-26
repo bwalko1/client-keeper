@@ -7,7 +7,7 @@ import { UserService } from '../../Services/user.service';
 import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
-  selector: 'app-login',
+  selector: 'ck-login',
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss']
 })
@@ -39,7 +39,7 @@ export class LoginPage implements OnInit {
         });
 
         this.userService.setUser({
-          username: username,
+          username,
           uid: result.user.uid
         });
 
