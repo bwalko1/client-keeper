@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { SetupPageRoutingModule } from './setup-routing.module';
 
 import { SetupPage } from './setup.page';
-import { MaterialModule } from '../material.module';
+import { MaterialModule } from '../../Modules/material.module';
 
 @NgModule({
   imports: [

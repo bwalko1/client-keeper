@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
-import { UserService } from '../user.service';
-import { firestore } from 'firebase/app';
+import { UserService } from '../../Services/user.service';
 
 @Component({
   selector: 'app-setup',
@@ -22,7 +21,7 @@ export class SetupPage implements OnInit {
     const setting = this.setting;
 
     this.angularFirestore.doc(`users/${this.userService.getUID()}`).update({
-      settings: { setting: this.setting }
+      settings: { setting: setting }
     });
   }
 }
