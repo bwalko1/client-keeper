@@ -10,17 +10,17 @@ const routes: Routes = [
       {
         path: 'setup',
         loadChildren: () =>
-          import('../../Pages/setup/setup.module').then(m => m.SetupPageModule)
+          import('../../pages/setup/setup.module').then(m => m.SetupPageModule)
       },
       {
         path: 'list',
         loadChildren: () =>
-          import('../../Pages/list/list.module').then(m => m.ListPageModule)
+          import('../../pages/list/list.module').then(m => m.ListPageModule)
       },
       {
         path: 'profile',
         loadChildren: () =>
-          import('../../Pages/profile/profile.module').then(
+          import('../../pages/profile/profile.module').then(
             m => m.ProfilePageModule
           )
       }

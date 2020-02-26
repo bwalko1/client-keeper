@@ -12,7 +12,8 @@ import {
   MatSortModule,
   MatListModule,
   MatCheckboxModule,
-  MatCardModule
+  MatCardModule,
+  MatSpinner
 } from '@angular/material';
 
 @NgModule({
@@ -29,7 +30,8 @@ import {
     MatSortModule,
     MatListModule,
     MatCheckboxModule,
-    MatCardModule
+    MatCardModule,
+    MatSpinner
   ]
 })
 export class MaterialModule {}

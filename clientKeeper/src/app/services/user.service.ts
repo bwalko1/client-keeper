@@ -34,16 +34,15 @@ export class UserService {
   async isAuthenticated() {
     if (this.user) return true;
 
-    const user = await this.angularFireAuth.authState.pipe(first()).toPromise();
+    // const user = await this.angularFireAuth.authState.pipe(first()).toPromise();
+    // if (user) {
+    //   this.setUser({
+    //     username: user.email.split('@')[0],
+    //     uid: user.uid
+    //   });
 
-    if (user) {
-      this.setUser({
-        username: user.email.split('@')[0],
-        uid: user.uid
-      });
-
-      return true;
-    }
+    //   return true;
+    // }
 
     return false;
   }

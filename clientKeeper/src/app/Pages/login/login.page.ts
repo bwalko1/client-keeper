@@ -3,7 +3,7 @@ import { AngularFireAuth } from '@angular/fire/auth';
 
 import { AlertController } from '@ionic/angular';
 import { Router } from '@angular/router';
-import { UserService } from '../../Services/user.service';
+import { UserService } from '../../services/user.service';
 import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({

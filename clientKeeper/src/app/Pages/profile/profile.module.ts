@@ -7,9 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { ProfilePageRoutingModule } from './profile-routing.module';
 
 import { ProfilePage } from './profile.page';
-import { MaterialModule } from '../../Modules/material.module';
-import { ShareModule } from '../../Modules/share.module';
-import { LoadingComponent } from 'src/app/Components/loading/loading.component';
+import { MaterialModule } from '../../modules/material.module';
 
 @NgModule({
   imports: [
@@ -17,9 +15,7 @@ import { LoadingComponent } from 'src/app/Components/loading/loading.component';
     FormsModule,
     IonicModule,
     ProfilePageRoutingModule,
-    MaterialModule,
-    ShareModule,
-    LoadingComponent
+    MaterialModule
   ],
   declarations: [ProfilePage]
 })

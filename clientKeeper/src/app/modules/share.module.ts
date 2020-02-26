@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
-import { LoadingComponent } from '../Components/loading/loading.component';
 
 @NgModule({
-  declarations: [LoadingComponent],
-  exports: [LoadingComponent]
+  declarations: [],
+  exports: []
 })
 export class ShareModule {}

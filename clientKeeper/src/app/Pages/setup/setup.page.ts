@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
-import { UserService } from '../../Services/user.service';
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'ck-setup',

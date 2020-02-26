@@ -13,11 +13,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import firebaseConfig from './firebase';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
-import { UserService } from './Services/user.service';
+import { UserService } from './services/user.service';
 import 'hammerjs';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { AuthService } from './Services/auth.service';
-import { ShareModule } from './Modules/share.module';
+import { AuthService } from './services/auth.service';
+import { ShareModule } from './modules/share.module';
+import { MaterialModule } from './modules/material.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -30,7 +31,8 @@ import { ShareModule } from './Modules/share.module';
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule,
     AngularFireAuthModule,
-    ShareModule
+    ShareModule,
+    MaterialModule
   ],
   providers: [
     StatusBar,
