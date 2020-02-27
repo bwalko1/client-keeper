@@ -17,7 +17,7 @@ import { UserService } from './services/user.service';
 import 'hammerjs';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AuthService } from './services/auth.service';
-import { ShareModule } from './modules/share.module';
+import { SharedComponentsModule } from './modules/shared-components.module';
 import { MaterialModule } from './modules/material.module';
 
 @NgModule({
@@ -31,7 +31,7 @@ import { MaterialModule } from './modules/material.module';
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule,
     AngularFireAuthModule,
-    ShareModule,
+    SharedComponentsModule,
     MaterialModule
   ],
   providers: [

@@ -1,4 +1,17 @@
 <ion-content>
-  <mat-checkbox [(ngModel)]="setting">Setting</mat-checkbox>
-  <button mat-button (click)="saveSettings()">Save settings</button>
+  <div class="center">
+    <mat-list>
+      <mat-list-item>
+        <mat-checkbox [(ngModel)]="setting" color="primary">
+          Setting
+        </mat-checkbox>
+      </mat-list-item>
+
+      <mat-list-item>
+        <button mat-raised-button color="primary" (click)="saveSettings()">
+          Save settings
+        </button>
+      </mat-list-item>
+    </mat-list>
+  </div>
 </ion-content>

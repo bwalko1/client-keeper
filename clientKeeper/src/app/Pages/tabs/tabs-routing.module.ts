@@ -23,6 +23,9 @@ const routes: Routes = [
           import('../../pages/profile/profile.module').then(
             m => m.ProfilePageModule
           )
+      },
+      {
+        path: 'logout'
       }
     ]
   }

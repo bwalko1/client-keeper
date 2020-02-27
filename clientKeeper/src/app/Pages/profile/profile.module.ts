@@ -8,6 +8,7 @@ import { ProfilePageRoutingModule } from './profile-routing.module';
 
 import { ProfilePage } from './profile.page';
 import { MaterialModule } from '../../modules/material.module';
+import { SharedComponentsModule } from 'src/app/modules/shared-components.module';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { MaterialModule } from '../../modules/material.module';
     FormsModule,
     IonicModule,
     ProfilePageRoutingModule,
-    MaterialModule
+    MaterialModule,
+    SharedComponentsModule
   ],
   declarations: [ProfilePage]
 })

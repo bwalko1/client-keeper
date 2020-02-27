@@ -1,24 +1,52 @@
 <ion-content>
-  <div class="center">
-    <mat-list>
-      <mat-list-item>
-        <mat-form-field>
-          <input matInput placeholder="Username" [(ngModel)]="username" />
-        </mat-form-field>
-      </mat-list-item>
+  <div class="centered-content">
+    <div class="title-area">
+      <h1 class="title">Client Keeper</h1>
+    </div>
 
-      <mat-list-item>
-        <mat-form-field>
-          <input
-            matInput
-            placeholder="Password"
-            type="password"
-            [(ngModel)]="password"
-          />
-        </mat-form-field>
-      </mat-list-item>
-    </mat-list>
+    <div class="form-field">
+      <mat-form-field class="form-text">
+        <input
+          matInput
+          class="form-input"
+          placeholder="Username"
+          [(ngModel)]="username"
+        />
+      </mat-form-field>
+    </div>
 
-    <button mat-raised-button color="primary" (click)="login()">Login</button>
+    <div class="form-field">
+      <mat-form-field class="form-text">
+        <input
+          matInput
+          class="form-input"
+          placeholder="Password"
+          type="password"
+          [(ngModel)]="password"
+        />
+      </mat-form-field>
+    </div>
+
+    <div class="button-container">
+      <button
+        mat-raised-button
+        class="button-text login-button"
+        color="primary"
+        (click)="login()"
+      >
+        Login
+      </button>
+    </div>
+
+    <div class="button-container">
+      <button
+        mat-raised-button
+        class="button-text register-button"
+        color="secondary"
+        (click)="register()"
+      >
+        Register
+      </button>
+    </div>
   </div>
 </ion-content>

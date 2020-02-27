@@ -21,7 +21,7 @@ export class SetupPage implements OnInit {
     const setting = this.setting;
 
     this.angularFirestore.doc(`users/${this.userService.getUID()}`).update({
-      settings: { setting: setting }
+      settings: { setting }
     });
   }
 }

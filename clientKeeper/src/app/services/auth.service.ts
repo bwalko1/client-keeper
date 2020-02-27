@@ -6,11 +6,10 @@ import { UserService } from './user.service';
   providedIn: 'root'
 })
 export class AuthService implements CanActivate {
-
   constructor(public router: Router, public userService: UserService) {}
 
-  async canActivate(route){
-    if (await this.userService.isAuthenticated()){
+  async canActivate() {
+    if (await this.userService.isAuthenticated()) {
       return true;
     }
 

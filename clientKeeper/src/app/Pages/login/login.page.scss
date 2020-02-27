@@ -1,6 +1,64 @@
-.center {
+@import '~@angular/material/theming';
+
+$primary: mat-palette($mat-pink);
+
+.centered-content {
   display: flex;
-  height: 100%;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.title-area {
+  padding: 8px 8px 2em 8px;
+  margin-bottom: 2em;
+
+  .title {
+    font-size: 2.5em;
+    font-family: 'Poppins';
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
+
+.form-field {
+  padding: 8px;
+  font-family: 'Raleway';
+
+  .form-text {
+    text-transform: uppercase;
+    font-family: 'Poppins';
+  }
+
+  .form-input {
+  }
+}
+
+.button-container {
+  padding: 8px;
+}
+
+.button-text {
+  font-family: 'Poppins';
+}
+
+.login-button {
+  border: 2px solid transparent;
+
+  &:hover {
+    background: transparent;
+    border: 2px solid mat-color($primary);
+  }
+}
+
+.register-button {
+  border: 2px solid transparent;
+
+  &:hover {
+    background: transparent;
+    border: 2px solid grey;
+  }
 }
